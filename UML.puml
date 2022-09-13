@@ -1,0 +1,20 @@
+@startuml
+
+left to right direction
+
+class Librarian{
+book_list: list
+addB(book: str)
+removeb(book: str)
+}
+
+class User{
+name: str
+booksBorrowed: list
+borrowBook(book: str, booklist: list)
+returnBook(book: str, booklist: list)
+}
+
+User "*" --* "1"Librarian 
+
+@enduml
